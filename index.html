@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Custom AI Chatbots for Remodelers & Contractors. Auto-qualify leads 24/7.">
+    <title>AI Custom Bot | Automated Leads for Contractors</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter for clean, professional typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles for Polish -->
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        
+        /* Glassmorphism Navigation */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        /* Gradient Button Animation */
+        .btn-primary {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.4);
+        }
+
+        /* Card Hover Effects */
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #fdba74;
+        }
+
+        /* Chat Animation */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .chat-bubble { animation: fadeIn 0.5s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 selection:bg-orange-100 selection:text-orange-900">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            
+            <!-- BRANDING AREA (Logo + Text) -->
+            <a href="#" class="flex items-center gap-3 group">
+                <!-- Logo Image: Optimized for clear visibility -->
+                <img src="logo.jpg" alt="AI Custom Bot Logo" class="h-10 w-auto object-contain rounded-md shadow-sm group-hover:scale-105 transition duration-300">
+                
+                <!-- Text: Visible on all screens, but refined -->
+                <span class="text-xl font-extrabold text-slate-900 tracking-tight leading-none flex flex-col">
+                    <span>AI<span class="text-orange-600">CUSTOM</span>BOT</span>
+                    <span class="text-[10px] font-medium text-slate-500 uppercase tracking-widest hidden sm:block">Agency</span>
+                </span>
+            </a>
+            
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#simulator" class="hover:text-orange-600 transition">How It Works</a>
+                <a href="#pricing" class="hover:text-orange-600 transition">Pricing</a>
+                <a href="#demo" class="hover:text-orange-600 transition">Results</a>
+            </div>
+
+            <!-- CTA -->
+            <a href="#demo" class="btn-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold shadow-lg shadow-orange-100 hidden sm:block">
+                Get Free Demo
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Decor -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-orange-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <!-- Hero Text -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 border border-orange-100 text-orange-700 text-xs font-bold uppercase tracking-widest mb-8">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                        </span>
+                        Live in 48 Hours
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight">
+                        Stop Missing Leads <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-amber-600">After Hours.</span>
+                    </h1>
+                    
+                    <p class="text-lg text-slate-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                        We build custom AI chatbots trained on your contracting business. 
+                        Homeowners get instant answers. You get qualified estimates.
+                        <br><span class="text-slate-900 font-bold">No sales calls. No long projects.</span>
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#demo" class="btn-primary px-8 py-4 text-white font-bold rounded-xl text-lg shadow-xl shadow-orange-200 hover:shadow-2xl hover:shadow-orange-200 transition-all">
+                            Build My Free Demo
+                        </a>
+                        <a href="#simulator" class="px-8 py-4 bg-white text-slate-700 border border-slate-200 font-bold rounded-xl hover:bg-slate-50 hover:border-slate-300 transition shadow-sm">
+                            See It In Action
+                        </a>
+                    </div>
+
+                    <!-- Trust Bar -->
+                    <div class="mt-12 pt-8 border-t border-slate-200/60">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Built Specifically For</p>
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-x-8 gap-y-4 text-slate-400 font-bold text-sm">
+                            <span class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Remodelers</span>
+                            <span class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> HVAC & Plumbing</span>
+                            <span class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> General Contractors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image (Banner) -->
+                <div class="flex-1 w-full max-w-xl relative hidden md:block group">
+                    <!-- Glow Effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-amber-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                    <img src="banner.jpg" alt="AI Chatbot Dashboard" class="relative w-full rounded-2xl shadow-2xl border border-slate-100 z-10 transform transition duration-500 hover:scale-[1.01]" 
+                         onerror="this.src='https://placehold.co/800x600/f8fafc/cbd5e1?text=Your+Banner+Image+Here'">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- INTERACTIVE SIMULATOR SECTION -->
+    <section id="simulator" class="py-24 bg-white relative">
+        <div class="max-w-6xl px-6 mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">It Qualifies Leads While You Sleep.</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Contractors lose leads because they can't answer the phone 24/7. 
+                    <br>Our bots handle the questions, qualify the lead, and book the job.
+                </p>
+            </div>
+
+            <!-- CHATBOT UI -->
+            <div class="flex justify-center">
+                <div class="w-full max-w-md bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden transform hover:scale-[1.02] transition duration-500">
+                    <!-- Header -->
+                    <div class="bg-slate-900 p-4 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="relative">
+                                <div class="w-2.5 h-2.5 bg-green-500 rounded-full absolute bottom-0 right-0 border border-slate-900"></div>
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-xs font-bold">AI</div>
+                            </div>
+                            <div>
+                                <div class="text-white font-bold text-sm">Estimator Bot</div>
+                                <div class="text-slate-400 text-xs">Replies instantly</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-500 hover:text-white cursor-pointer transition">✕</div>
+                    </div>
+                    
+                    <!-- Chat Area -->
+                    <div class="h-[400px] bg-slate-50 p-6 flex flex-col space-y-6 overflow-y-auto">
+                        <!-- AI Message 1 -->
+                        <div class="flex items-start gap-3 chat-bubble" style="animation-delay: 0.1s">
+                            <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 text-xs font-bold shrink-0">AI</div>
+                            <div class="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm text-sm text-slate-700 border border-slate-100 leading-relaxed">
+                                Hi! Thanks for visiting. Are you looking for a quote or do you have a question about our services?
+                            </div>
+                        </div>
+
+                        <!-- User Message -->
+                        <div class="flex items-end justify-end gap-3 chat-bubble" style="animation-delay: 1.5s">
+                            <div class="bg-orange-600 text-white p-4 rounded-2xl rounded-tr-none shadow-md text-sm font-medium leading-relaxed">
+                                How much does a 10x10 kitchen remodel typically cost?
+                            </div>
+                        </div>
+
+                        <!-- AI Message 2 -->
+                        <div class="flex items-start gap-3 chat-bubble" style="animation-delay: 3s">
+                            <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 text-xs font-bold shrink-0">AI</div>
+                            <div class="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm text-sm text-slate-700 border border-slate-100 leading-relaxed">
+                                Based on our past projects, a standard kitchen remodel ranges from <strong>$25k - $45k</strong> depending on cabinets and finishes.
+                                <br><br>
+                                Would you like to schedule a <strong>free onsite estimate</strong> to get an exact price?
+                            </div>
+                        </div>
+
+                        <!-- Button Options -->
+                        <div class="flex flex-col gap-2 pl-11 chat-bubble" style="animation-delay: 4s">
+                            <button class="w-full bg-white border border-orange-200 text-orange-700 text-sm font-bold py-2 px-4 rounded-xl hover:bg-orange-50 transition text-left flex justify-between items-center group">
+                                Yes, Schedule Quote
+                                <span class="group-hover:translate-x-1 transition-transform">→</span>
+                            </button>
+                            <button class="w-full bg-transparent text-slate-400 text-xs py-1 hover:text-slate-600 transition">Maybe later</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="py-24 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl px-6 mx-auto">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Simple, One-Time Build Fees.</h2>
+                <p class="text-xl text-slate-600">
+                    No monthly subscriptions. No hidden retainers.<br>
+                    <span class="font-bold text-orange-600">You own the bot 100%.</span>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 align-stretch">
+                
+                <!-- ESSENTIAL ($1,500) -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 pricing-card flex flex-col">
+                    <div class="mb-4">
+                        <h3 class="font-bold text-slate-500 uppercase tracking-widest text-xs">Essential</h3>
+                        <div class="mt-4 flex items-baseline gap-1">
+                            <span class="text-3xl font-extrabold text-slate-900">$1,500</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-2">One-time payment</p>
+                    </div>
+                    <ul class="text-sm space-y-4 mb-8 text-slate-600 flex-1">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 1 Chatbot</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Train on 10 Pages</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 1 Week Support</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Basic Installation</li>
+                    </ul>
+                    <a href="#demo" class="block w-full py-3 bg-slate-100 text-slate-900 font-bold text-center rounded-lg hover:bg-slate-200 transition">Select Plan</a>
+                </div>
+
+                <!-- STARTER ($3,500) - HIGHLIGHTED -->
+                <div class="bg-white p-8 rounded-2xl border-2 border-orange-500 shadow-xl pricing-card flex flex-col relative overflow-hidden transform lg:-translate-y-4 z-10">
+                    <div class="absolute top-0 right-0 bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Most Popular</div>
+                    <div class="mb-4">
+                        <h3 class="font-bold text-orange-600 uppercase tracking-widest text-xs">Starter</h3>
+                        <div class="mt-4 flex items-baseline gap-1">
+                            <span class="text-4xl font-extrabold text-slate-900">$3,500</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-2">One-time payment</p>
+                    </div>
+                    <ul class="text-sm space-y-4 mb-8 text-slate-900 font-medium flex-1">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Full Knowledge Base</strong></li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Train on 30 Pages</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 1 Month Priority Support</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Staff Training Session</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Custom Branding</li>
+                    </ul>
+                    <a href="#demo" class="btn-primary block w-full py-4 text-white font-bold text-center rounded-lg shadow-lg">Get Starter Demo</a>
+                </div>
+
+                <!-- CORE ($5,000) -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 pricing-card flex flex-col">
+                    <div class="mb-4">
+                        <h3 class="font-bold text-slate-900 uppercase tracking-widest text-xs">Core</h3>
+                        <div class="mt-4 flex items-baseline gap-1">
+                            <span class="text-3xl font-extrabold text-slate-900">$5,000</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-2">One-time payment</p>
+                    </div>
+                    <ul class="text-sm space-y-4 mb-8 text-slate-600 flex-1">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>3 Specialized Bots</strong></li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Sales, Support, Onboard</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Train on 100 Pages</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 3 Months Support</li>
+                    </ul>
+                    <a href="#demo" class="block w-full py-3 bg-slate-900 text-white font-bold text-center rounded-lg hover:bg-slate-800 transition">Select Plan</a>
+                </div>
+
+                <!-- PREMIUM ($7,500) -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 pricing-card flex flex-col opacity-75 hover:opacity-100">
+                    <div class="mb-4">
+                        <h3 class="font-bold text-slate-900 uppercase tracking-widest text-xs">Premium</h3>
+                        <div class="mt-4 flex items-baseline gap-1">
+                            <span class="text-3xl font-extrabold text-slate-900">$7,500</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-2">One-time payment</p>
+                    </div>
+                    <ul class="text-sm space-y-4 mb-8 text-slate-600 flex-1">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Multi-Site / Multi-Org</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 5 Bots (300 Pages)</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 5 Months Support</li>
+                    </ul>
+                    <a href="#demo" class="block w-full py-3 bg-white border-2 border-slate-200 text-slate-900 font-bold text-center rounded-lg hover:border-slate-900 transition">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEMO REQUEST FORM -->
+    <section id="demo" class="py-24 bg-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-full max-h-[600px] bg-gradient-to-tr from-orange-50 to-slate-50 rounded-full blur-3xl opacity-60 -z-10"></div>
+
+        <div class="max-w-3xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-orange-600 font-bold tracking-wider uppercase text-xs">Free Demo</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mt-2 mb-4">See It Working On <span class="text-orange-600">Your Website.</span></h2>
+                <p class="text-lg text-slate-600">We'll scan your website and build a private, working bot in 24 hours. <br><strong>No credit card. No obligation.</strong></p>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-slate-100 relative">
+                
+                <!-- SUCCESS STATE -->
+                <div id="success-message" class="hidden absolute inset-0 bg-white rounded-3xl z-20 flex flex-col items-center justify-center text-center p-8">
+                    <div class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mb-6 animate-bounce">
+                        <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Request Received!</h3>
+                    <p class="text-slate-600 mb-6 max-w-md">We are scanning your website now. Look out for an email from <strong>hello@aicustombot.net</strong> within 24 hours.</p>
+                    <button onclick="location.reload()" class="text-orange-600 font-bold hover:underline">Submit another site</button>
+                </div>
+
+                <form id="demo-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Company Name</label>
+                            <input type="text" name="company" required class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-100 outline-none transition font-semibold text-slate-900 placeholder-slate-400" placeholder="e.g. Apex Remodeling">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Website URL</label>
+                            <input type="url" name="website" required placeholder="https://..." class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-100 outline-none transition font-semibold text-slate-900 placeholder-slate-400">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Your Work Email</label>
+                        <input type="email" name="email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-100 outline-none transition font-semibold text-slate-900 placeholder-slate-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Top Question Customers Ask?</label>
+                        <textarea name="question" rows="2" placeholder="e.g. Do you offer financing? Are you licensed?" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-100 outline-none transition font-semibold text-slate-900 placeholder-slate-400"></textarea>
+                    </div>
+                    
+                    <button type="submit" id="submit-btn" class="w-full btn-primary text-white font-bold text-xl py-5 rounded-xl shadow-xl hover:shadow-2xl transition flex justify-center items-center">
+                        <span id="btn-text">Request Free Demo</span>
+                        <!-- Spinner -->
+                        <svg id="btn-spinner" class="animate-spin ml-3 h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </button>
+                    <p class="text-center text-xs text-slate-400">By clicking, you agree to receive your demo via email. We respect your privacy.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="logo.jpg" alt="Logo" class="h-8 w-auto grayscale opacity-80" onerror="this.style.display='none'">
+                    <span class="font-bold text-white text-xl tracking-tight">AI CUSTOM BOT</span>
+                </div>
+                <p class="text-sm text-slate-500 max-w-xs leading-relaxed">
+                    Helping remodelers and contractors capture more leads and save time with custom AI automation.
+                </p>
+                <div class="mt-6 flex space-x-4">
+                    <!-- Social placeholders -->
+                    <a href="#" class="text-slate-500 hover:text-white transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold mb-6">Company</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#how-it-works" class="hover:text-orange-500 transition">How It Works</a></li>
+                    <li><a href="#pricing" class="hover:text-orange-500 transition">Pricing</a></li>
+                    <li><a href="#" class="hover:text-orange-500 transition">Case Studies</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6">Support</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="mailto:hello@aicustombot.net" class="hover:text-orange-500 transition">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-orange-500 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-orange-500 transition">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-16 pt-8 border-t border-slate-800 text-center text-xs text-slate-600">
+            &copy; 2026 AI Custom Bot. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- LOGIC SCRIPT -->
+    <script>
+        // ==========================================
+        // CONFIGURATION
+        // ==========================================
+        
+        // 1. Paste your n8n Production Webhook URL here:
+        const WEBHOOK_URL = "https://ekf.app.n8n.cloud/webhook/demo-request"; 
+        
+        // ==========================================
+
+        const form = document.getElementById('demo-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const btnSpinner = document.getElementById('btn-spinner');
+        const successMessage = document.getElementById('success-message');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // UI Loading
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            btnText.textContent = "Analyzing Website...";
+            btnSpinner.classList.remove('hidden');
+
+            // Data Collection
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            data.submittedAt = new Date().toISOString();
+            data.source = window.location.hostname;
+
+            try {
+                if (WEBHOOK_URL) {
+                    await fetch(WEBHOOK_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    });
+                } else {
+                    // Simulation
+                    await new Promise(resolve => setTimeout(resolve, 2000));
+                    console.log("Simulated Data Sent:", data);
+                }
+
+                // Success UI
+                successMessage.classList.remove('hidden');
+
+            } catch (error) {
+                console.error('Error:', error);
+                alert("There was an error connecting to the server. Please try again.");
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                btnText.textContent = "Request Free Demo";
+                btnSpinner.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
