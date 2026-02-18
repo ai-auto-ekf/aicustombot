@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="See AI Custom Bot in action. Explore our 9 chat simulators showcasing how we handle lead qualification, scheduling, and project details.">
+    <title>Demo | AI Custom Bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header-logo">
+                <img src="logo.png" alt="AI Custom Bot Logo" style="height: 32px;">
+                <span class="logo-hights">AI <span class="logo-highlight">CUSTOM</span> BOT</span>
+            </a>
+            <nav class="header-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="remodelers.html">Remodelers</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="demo.html" class="active">Demo</a>
+                <a href="ghl-services.html">GHL Services</a>
+                <div class="header-cta">
+                    <a href="contact.html" class="btn btn-primary">Get Free Demo</a>
+                </div>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero-title">Experience Our AI In Action</h1>
+            <p class="page-hero-subtitle">See exactly how our AI assistants handle real customer conversations, from
+                initial contact to booking the job.</p>
+        </div>
+    </section>
+
+    <!-- Simulators Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3" style="column-gap: 2rem; row-gap: 4rem;">
+
+                <!-- Simulator 1 -->
+                <div class="chat-simulator-wrapper">
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar-header">AI</div>
+                            <div class="chat-info">
+                                <h4>Project Type Bot</h4>
+                                <span>Replies instantly</span>
+                            </div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-bubble chat-bubble-ai delay-1">
+                                Hi there! What type of remodel are you thinking about today – kitchen, bathroom,
+                                basement, addition, or something else?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-2">
+                                Kitchen remodel.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-3">
+                                Great, a kitchen remodel can add a lot of value. Is this more of a light update or a
+                                full redesign?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-4">
+                                Full redesign.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-5">
+                                Understood. Roughly how big is your kitchen (small / medium / large)?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-6">
+                                Medium.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-7">
+                                Perfect. I’ll note: kitchen, full redesign, medium size.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700;">1. Scope Assessment</h4>
+                    </div>
+                </div>
+
+                <!-- Simulator 2 -->
+                <div class="chat-simulator-wrapper">
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar-header">AI</div>
+                            <div class="chat-info">
+                                <h4>Location Bot</h4>
+                                <span>Replies instantly</span>
+                            </div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-bubble chat-bubble-ai delay-1">
+                                What city or neighborhood is the property in? This helps us confirm you’re inside our
+                                service area.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-2">
+                                New Cairo.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-3">
+                                Thanks! And what’s the project address or nearest major landmark?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-4">
+                                Near 90th Street, New Cairo.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-5">
+                                Got it. We do serve that area. I’ll attach this location to your project so the team can
+                                plan site visits.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700;">2. Location Check</h4>
+                    </div>
+                </div>
+
+                <!-- Simulator 3 -->
+                <div class="chat-simulator-wrapper">
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar-header">AI</div>
+                            <div class="chat-info">
+                                <h4>Timeline Bot</h4>
+                                <span>Replies instantly</span>
+                            </div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-bubble chat-bubble-ai delay-1">
+                                When are you hoping to start the remodel – ASAP, 1–3 months, 3–6 months, or just
+                                researching?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-2">
+                                In the next 3 months.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-3">
+                                Perfect. Do you have a specific target date (e.g. before summer)?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-4">
+                                Before summer.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-5">
+                                Great, I’ll note your target start as “before summer.” This helps us check schedule
+                                availability.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700;">3. Timeline Planning</h4>
+                    </div>
+                </div>
+
+                <!-- Simulator 4 -->
+                <div class="chat-simulator-wrapper">
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar-header">AI</div>
+                            <div class="chat-info">
+                                <h4>Budget Bot</h4>
+                                <span>Replies instantly</span>
+                            </div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-bubble chat-bubble-ai delay-1">
+                                To recommend realistic options, what’s your approximate budget range?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-2">
+                                Around 300K–600K.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-3">
+                                Thanks. Within that range, do you prioritize low cost or best design options?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-4">
+                                Best design and finishes.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-5">
+                                Noted: prioritizing quality finishes. The designer can tailor materials and layout to
+                                fit that.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700;">4. Budget Qualification</h4>
+                    </div>
+                </div>
+
+                <!-- Simulator 5 -->
+                <div class="chat-simulator-wrapper">
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar-header">AI</div>
+                            <div class="chat-info">
+                                <h4>Experience Bot</h4>
+                                <span>Replies instantly</span>
+                            </div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-bubble chat-bubble-ai delay-1">
+                                Have you ever worked with a remodeling company or contractor before?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-2">
+                                Yes, but long ago.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-3">
+                                How was that experience – positive, negative, or mixed?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-4">
+                                Mixed.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-5">
+                                If there’s one thing to avoid this time (e.g. delays, poor communication), what would it
+                                be?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-6">
+                                Delays and poor communication.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-7">
+                                Got it. I’ll highlight that to the team so they focus on clear timelines and updates.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700;">5. Past Experience</h4>
+                    </div>
+                </div>
+
+                <!-- Simulator 6 -->
+                <div class="chat-simulator-wrapper">
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar-header">AI</div>
+                            <div class="chat-info">
+                                <h4>Needs Analysis Bot</h4>
+                                <span>Replies instantly</span>
+                            </div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-bubble chat-bubble-ai delay-1">
+                                What’s the main reason you’re considering this remodel?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-2">
+                                Space feels too small and badly laid out.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-3">
+                                Is there a specific pain point that bothers you every day?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-4">
+                                Not enough storage and poor lighting.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-5">
+                                Noted: more storage and better lighting are key goals. The designer will focus on
+                                cabinetry options.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700;">6. Problem Solving</h4>
+                    </div>
+                </div>
+
+                <!-- Simulator 7 -->
+                <div class="chat-simulator-wrapper">
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar-header">AI</div>
+                            <div class="chat-info">
+                                <h4>Style Bot</h4>
+                                <span>Replies instantly</span>
+                            </div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-bubble chat-bubble-ai delay-1">
+                                Do you have plans, sketches, or inspiration photos for this project?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-2">
+                                Inspiration photos only.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-3">
+                                Great start. Would you describe your preferred look as modern, classic, or in-between?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-4">
+                                Modern.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-5">
+                                Modern style noted. We’ll tag your project so proposed materials match your taste.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700;">7. Design Preferences</h4>
+                    </div>
+                </div>
+
+                <!-- Simulator 8 -->
+                <div class="chat-simulator-wrapper">
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar-header">AI</div>
+                            <div class="chat-info">
+                                <h4>Contact Bot</h4>
+                                <span>Replies instantly</span>
+                            </div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-bubble chat-bubble-ai delay-1">
+                                How do you prefer we contact you first – phone call, WhatsApp, or email?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-2">
+                                WhatsApp.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-3">
+                                Great. What’s the best number to reach you on?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-4">
+                                +20 1X XXX XXXX.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-5">
+                                Any preferred days/times for a quick follow-up?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-6">
+                                Evenings.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-7">
+                                Got it – WhatsApp, evenings. I’ll add that to your project.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700;">8. Contact Preferences</h4>
+                    </div>
+                </div>
+
+                <!-- Simulator 9 -->
+                <div class="chat-simulator-wrapper">
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar-header">AI</div>
+                            <div class="chat-info">
+                                <h4>Confirm Bot</h4>
+                                <span>Replies instantly</span>
+                            </div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-bubble chat-bubble-ai delay-1">
+                                Can I grab your name and email to send a summary?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-2">
+                                Ahmed, ahmed@example.com
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-3">
+                                Thanks Ahmed. Project: Kitchen, New Cairo, 300K-600K range. Does this look correct?
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                            <div class="chat-bubble chat-bubble-user delay-4">
+                                Yes, that’s correct.
+                            </div>
+                            <div class="chat-bubble chat-bubble-ai delay-5">
+                                Perfect. I’ll share this with the team and you’ll receive a confirmation shortly.
+                                <div class="chat-avatar-small">AI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700;">9. Confirmation</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main CTA Section -->
+    <section class="section-cta">
+        <div class="container cta-content">
+            <h2 class="cta-title">Ready to Automate Your Leads?</h2>
+            <p class="cta-text">Get a custom AI chatbot that qualifies leads while you sleep.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary btn-lg">Get Your Own Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-hights">AI <span class="logo-highlight">CUSTOM</span> BOT</span>
+                    </div>
+                    <p class="footer-description">Helping remodelers and contractors capture more leads and save time
+                        with custom AI chatbots and automation.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="demo.html">Demo</a>
+                        <a href="remodelers.html">Remodelers</a>
+                        <a href="ghl-services.html">GHL Services</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Solutions</h4>
+                    <div class="footer-links">
+                        <a href="remodelers.html">For Remodelers</a>
+                        <a href="#">For HVAC & Plumbers</a>
+                        <a href="#">For Roofers</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <div class="footer-links">
+                        <a href="mailto:info@aicustombot.net">info@aicustombot.net</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 AI Custom Bot. All rights reserved.</p>
+                <p class="footer-email"><a href="mailto:info@aicustombot.net">info@aicustombot.net</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('is-open');
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact AI Custom Bot. Schedule a demo or get a quote for your custom AI chatbot and automation solution.">
+    <title>Contact Us | AI Custom Bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Updated favicon to transparent PNG -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header-logo">
+                <!-- Use new logo image -->
+                <img src="logo.png" alt="AI Custom Bot Logo" style="height: 32px;">
+                <span class="logo-hights">AI <span class="logo-highlight">CUSTOM</span> BOT</span>
+            </a>
+            <nav class="header-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="remodelers.html">Remodelers</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="demo.html">Demo</a>
+                <a href="ghl-services.html">GHL Services</a>
+                <div class="header-cta">
+                    <a href="contact.html" class="btn btn-primary">Get Free Demo</a>
+                </div>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero-title">Get Your Custom AI Bot</h1>
+            <p class="page-hero-subtitle">Ready to automate your leads? Fill out the form below to schedule a demo or
+                get a quote.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-wrapper" style="max-width: 800px; margin: 0 auto;">
+
+                <div class="feature-card" style="padding: 3rem;">
+                    <form id="contactForm" class="contact-form">
+
+                        <div class="grid grid-2" style="gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required
+                                    placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required
+                                    placeholder="john@company.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-2" style="gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required
+                                    placeholder="(555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company Website</label>
+                                <input type="url" id="company" name="company" class="form-input"
+                                    placeholder="https://yourcompany.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-2" style="gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Interest *</label>
+                                <select id="service" name="service" class="form-input" required>
+                                    <option value="" disabled selected>Select a service...</option>
+                                    <option value="Client-Hosted AI Bot">Client-Hosted AI Bot</option>
+                                    <option value="Managed GHL CRM">Managed GHL CRM</option>
+                                    <option value="Remodeler System">Remodeler System</option>
+                                    <option value="Other / Unsure">Other / Unsure</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget" class="form-label">Estimated Budget</label>
+                                <select id="budget" name="budget" class="form-input">
+                                    <option value="" disabled selected>Select a range...</option>
+                                    <option value="$1k - $3k">$1k - $3k</option>
+                                    <option value="$3k - $10k">$3k - $10k</option>
+                                    <option value="$10k+">$10k+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 2rem;">
+                            <label for="message" class="form-label">How can we help you?</label>
+                            <textarea id="message" name="message" class="form-input" rows="5"
+                                placeholder="Tell us about your business goals..."></textarea>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn btn-primary btn-lg"
+                                style="width: 100%; max-width: 400px;">Request Demo / Quote</button>
+                        </div>
+                        <p id="formStatus"
+                            style="text-align: center; margin-top: 1rem; font-weight: 500; display: none;"></p>
+                    </form>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <p style="color: var(--slate-500);">Prefer email? <a href="mailto:info@aicustombot.net"
+                            style="color: var(--brand-orange); font-weight: 600;">info@aicustombot.net</a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-hights">AI <span class="logo-highlight">CUSTOM</span> BOT</span>
+                    </div>
+                    <p class="footer-description">Helping remodelers and contractors capture more leads and save time
+                        with custom AI chatbots and automation.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="demo.html">Demo</a>
+                        <a href="remodelers.html">Remodelers</a>
+                        <a href="ghl-services.html">GHL Services</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Solutions</h4>
+                    <div class="footer-links">
+                        <a href="remodelers.html">For Remodelers</a>
+                        <a href="#">For HVAC & Plumbers</a>
+                        <a href="#">For Roofers</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 AI Custom Bot. All rights reserved.</p>
+                <!-- Added contact email to footer bottom -->
+                <p class="footer-email"><a href="mailto:info@aicustombot.net">info@aicustombot.net</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('is-open');
+            });
+        }
+    </script>
+
+    <!-- Form Script -->
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
