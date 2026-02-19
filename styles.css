@@ -1303,6 +1303,72 @@ strong {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-8);
   }
+
+  /* Table Mobile Card View */
+  .care-plan-table thead {
+    display: none;
+  }
+
+  /* Reset table display for card view */
+  .care-plan-table,
+  .care-plan-table tbody,
+  .care-plan-table tr,
+  .care-plan-table td {
+    display: block;
+    width: 100%;
+  }
+
+  /* Ensure wrapper doesn't trap scroll when in card view */
+  .care-plan-table-wrapper {
+    overflow-x: visible;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  .care-plan-table tr {
+    margin-bottom: var(--space-6);
+    border: 1px solid var(--slate-200);
+    border-radius: var(--radius-lg);
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-5);
+  }
+
+  .care-plan-table td {
+    text-align: right;
+    padding: var(--space-3) 0;
+    position: relative;
+    border-bottom: 1px solid var(--slate-100);
+    padding-left: 50%;
+    /* Make space for the label */
+    min-height: 40px;
+    /* Ensure minimum height */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .care-plan-table td:last-child {
+    border-bottom: none;
+  }
+
+  .care-plan-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    padding-right: 10px;
+    white-space: normal;
+    /* Allow wrapping */
+    text-align: left;
+    font-weight: 700;
+    color: var(--slate-900);
+    font-size: var(--font-size-sm);
+    line-height: 1.2;
+  }
 }
 
 /* Mobile */
@@ -1327,7 +1393,7 @@ strong {
 
   .hero {
     min-height: auto;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: var(--space-16);
   }
 
@@ -1444,6 +1510,10 @@ strong {
     padding: var(--space-6);
   }
 
+  .card {
+    padding: var(--space-6);
+  }
+
   .feature-card {
     padding: var(--space-6);
   }
@@ -1452,8 +1522,21 @@ strong {
 /* ============================================
    CHAT SIMULATOR
    ============================================ */
+.chat-section-grid {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .chat-section-grid {
+    margin-top: var(--space-10);
+    margin-bottom: var(--space-10);
+  }
+}
+
 .chat-simulator-wrapper {
   max-width: 400px;
+  width: 100%;
   margin: 0 auto;
   font-family: 'Inter', sans-serif;
   margin-bottom: var(--space-8);
