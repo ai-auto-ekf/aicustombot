@@ -1172,6 +1172,12 @@ strong {
   margin-bottom: var(--space-4);
 }
 
+.legal-heading {
+  color: var(--brand-orange);
+  font-size: var(--font-size-base);
+  text-shadow: 0 0 10px rgba(234, 88, 12, 0.3);
+}
+
 .footer-links {
   display: flex;
   flex-direction: column;
